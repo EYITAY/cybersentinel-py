@@ -1,10 +1,21 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cybersentinel-py"
 version = "0.1.0"
+description = "A lightweight, explainable Python security analysis toolkit."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Eyitayo Alimi"}
+]
+
+[project.urls]
+Homepage = "https://github.com/EYITAY/cybersentinel-py"
+Repository = "https://github.com/EYITAY/cybersentinel-py"
+Issues = "https://github.com/EYITAY/cybersentinel-py/issues"
 
 [project.scripts]
 cybersentinel = "cybersentinel.cli:main"
