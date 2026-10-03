@@ -146,18 +146,19 @@ Security results should show the signals that produced them.
 Analyzers, models, scoring, explanation, and CLI functionality are separated.
 
 **Testable**
-Security rules should be backed by automated tests.
+Automated tests should back security rules.
 
 **Practical**
 The package is intended to be useful inside real Python development workflows.
 
-## Important Limitation
+## Analysis Scope
 
-CyberSentinel Py uses rule-based heuristics.
+CyberSentinel Py uses transparent, rule-based security analysis to identify observable indicators in URLs and text.
 
-A detected indicator is **not proof that an input is malicious**, and the absence of an indicator is not proof that an input is safe.
+Each result provides the detected indicators, supporting evidence, score, threat level, and recommendation. The output supports security triage and further investigation rather than replacing comprehensive security analysis.
 
-Results should be treated as security signals that can support further investigation.
+The current release focuses on explainable, deterministic security signals that developers can inspect, test, and extend.
+
 
 ## Project Links
 
